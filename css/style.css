@@ -29,9 +29,10 @@ h1 {
 }
 
 table, td, th {
-  border: 2px;
+  border-spacing: 0;
+  border: 1px;
   border-style: solid;
-  padding: 0px;
+  padding: 5px;
   text-align: center;
 }
 

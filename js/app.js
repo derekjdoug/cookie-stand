@@ -413,7 +413,7 @@ function tableFooter() {
   }
   let grandTotal = Math.round(holdArr.reduce((a, b) => a + b));
   console.log(grandTotal);
-  let footerData = document.createElement('th')
+  let footerData = document.createElement('th');
   footerData.textContent = `${grandTotal}`;
   footerRow.appendChild(footerData);
 }
