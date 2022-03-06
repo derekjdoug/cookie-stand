@@ -28,6 +28,14 @@ h1 {
   list-style: none;
 }
 
+table, td, th {
+  border-spacing: 0;
+  border: 1px;
+  border-style: solid;
+  padding: 5px;
+  text-align: center;
+}
+
 ul {
   border: 4px dashed black;
   padding: 5px;
