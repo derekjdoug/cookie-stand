@@ -41,8 +41,6 @@ function tableHeader() {
   headerRow.appendChild(total);
 }
 
-tableHeader();
-
 Cookies.prototype.cookiesPerHour = function () {
   let i = 0;
   for (i = 0; i < hour.length; i++) {
@@ -74,12 +72,6 @@ Cookies.prototype.render = function () {
   row.appendChild(total);
 };
 
-for (let i = 0; i < storesArr.length; i++) {
-  storesArr[i].cookiesPerHour();
-  storesArr[i].cookieTotal();
-  storesArr[i].render();
-}
-
 function tableFooter() {
   let tableFooter = document.createElement('thead');
   storesTable.appendChild(tableFooter);
@@ -108,4 +100,13 @@ function tableFooter() {
   footerRow.appendChild(footerData);
 }
 
-tableFooter();
+function tableCreation() {
+  for (let i = 0; i < storesArr.length; i++) {
+    storesArr[i].cookiesPerHour();
+    storesArr[i].cookieTotal();
+    storesArr[i].render();
+  }
+  tableHeader();
+  tableFooter();
+}
+tableCreation();
