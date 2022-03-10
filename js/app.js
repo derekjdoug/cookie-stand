@@ -95,7 +95,6 @@ Cookies.prototype.render = function () {
 //   row.appendChild(total);
 // };
 
-
 function tableFooter() {
   let tableFooter = document.createElement('thead');
   storesTable.appendChild(tableFooter);
