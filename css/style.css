@@ -152,11 +152,11 @@ table, td, th {
   border-style: solid;
   padding: 5px;
   text-align: center;
+  background-color: lightgray;
 }
 
-table {
-  margin: auto;
-  background-color: lightgray;
+label {
+  display: block;
 }
 
 .textChunk {
