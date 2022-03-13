@@ -1,44 +1,56 @@
 * {
   box-sizing: border-box;
-  margin: 15px;
+  margin: 0px;
+  margin-top: 0px;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
   background-color: salmon;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 header {
   background-color: #67EBC1;
   height: 100px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  margin: 0px;
   border: 2px black solid;
+  position: fixed;
 }
 
 header img {
   float: left;
+  padding-left: 20%;
   padding-right: 30px;
   margin: auto;
+  position: sticky;
+  top: 0;
 }
 
 header nav {
-  width: 960px;
+  width: 100%;
   margin: auto;
   padding: 15px;
-  padding-left: 0;
+  justify-content: center;
+  position: sticky;
 }
 
 header ul {
   list-style-type: none;
   margin:  0;
-  padding: 0;
-  padding-left: 15px;
+  padding-left: 5%;
   overflow: hidden;
 }
 
 header li {
   text-emphasis: none;
   display: inline-block;
-  margin-top: 25px;
+  margin: 25px 20px auto 20px;
+  text-align: center;
 }
 
 header li a {
@@ -47,6 +59,7 @@ header li a {
   margin: auto;
   font-size: larger;
   font-family: 'Megrim', cursive;
+  text-align: center;
 }
 
 header li a:hover {
@@ -56,7 +69,8 @@ header li a:hover {
 main {
   background-color: salmon;
   width: 1200px;
-  margin: 30px auto 0 auto;
+  margin: 0 auto 0 auto;
+  padding-top: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -70,7 +84,8 @@ h1 {
   font-family: 'Megrim', cursive;
   font-size: 4rem;
   margin: auto;
-  /* padding: 20px; */
+  margin-top: 150px;
+  padding: 20px;
   border: 2px black solid;
   background-color: #67EBC1;
   width: 1170px;
@@ -79,28 +94,39 @@ h1 {
 
 #hero {
   border: 2px black solid;
-  margin: auto;
+  margin: 25px auto;
 }
 
 h2 {
   display: block;
   width: 100%;
+  margin: 25px auto;
 }
 
 h3 {
   font-size: 1.5rem;
 }
 
+main div{
+  margin: 25px auto 25px auto;
+  padding: 20px;
+  display: flex;
+}
+
 main div:nth-of-type(2) {
   border: 2px solid black;
   background-color: #6C53D4;
   display: flex;
-  margin: auto;
-}
+  justify-content: space-between;
+  width: 80%;
+  margin: 25px auto;
+  padding: 10px;
 
-main div:last-child{
-  margin: auto;
+}
+.others {
   display: flex;
+  justify-content: center;
+  height: fit-content;
 }
 
 main img {
@@ -119,8 +145,8 @@ figcaption {
 
 .center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 25px auto 25px auto;
+  padding: 25px;
   width: 50%;
   background-color: #6C53D4;
 }
@@ -148,6 +174,10 @@ li.city {
   font-weight: 500;
 }
 
+table {
+  margin: 25px auto 25px;
+}
+
 table, td, th {
   border-spacing: 0;
   border: 1px;
@@ -161,18 +191,28 @@ label {
   display: block;
 }
 
+form {
+  margin: 25px auto 25px auto;
+}
+
 .textChunk {
-  margin: auto;
-  width: 1200px;
+  margin: 25px auto 25px auto;
+  width: 100%;
 }
 
 p {
   width: fit-content;
+  margin: 25px;
 }
+
+/* p::after {
+  content: \a;
+} */
 
 footer {
   background-color: #67EBC1;
   height: 100px;
+  width: 100%;
   border: 2px black solid;
 }
 

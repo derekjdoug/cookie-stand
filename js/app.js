@@ -15,13 +15,14 @@ let hour = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00
 
 
 function footReset() {
-  while(locationFoot.firstChild) {
+  while (locationFoot.firstChild) {
     locationFoot.removeChild(locationFoot.firstChild);
   }
   tableFooter();
 }
 
 const newStore = document.getElementById('addStore');
+
 
 newStore.addEventListener('submit', function (event) {
   event.preventDefault();
@@ -35,11 +36,29 @@ newStore.addEventListener('submit', function (event) {
   let avg = form.avg;
 
   let store = new Cookies(name.value, min.value, max.value, avg.value);
+
+  // for (let i = 0; i < storesArr.length; i++) {
+  //   if (name.value === storesArr[i].name) {
+  //     console.log(storesArr[i]);
+  //     let store = storesArr[i];
+  //     store.min = form.min;
+  //     store.max = form.max;
+  //     store.avgCookieSale = form.avg;
+  //     storesArr[i].push(store);
+  //     console.log(storesArr[i]);
+  //     console.log(storesArr);
+  //     storesArr.render();
+  //     break;
+  //   }
+  //   else {
   storesArr.push(store);
   store.cookiesPerHour();
   store.cookieTotal();
   store.render();
   footReset();
+  // break;
+  //   }
+  // }
 
   name.value = '';
   min.value = '';
