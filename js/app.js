@@ -35,7 +35,7 @@ newStore.addEventListener('submit', function (event) {
   let max = form.max;
   let avg = form.avg;
 
-  let store = new Cookies(name.value, min.value, max.value, avg.value);
+  let store = new Cookies(name.value, parseInt(min.value), parseInt(max.value), parseInt(avg.value));
 
   // for (let i = 0; i < storesArr.length; i++) {
   //   if (name.value === storesArr[i].name) {
@@ -52,6 +52,7 @@ newStore.addEventListener('submit', function (event) {
   //   }
   //   else {
   storesArr.push(store);
+  console.log(store);
   store.cookiesPerHour();
   store.cookieTotal();
   store.render();
