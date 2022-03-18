@@ -1,4 +1,4 @@
-# Lab: 06
+# Lab: 10b
 
 ## cookie-stand (salmon cookies)
 
@@ -15,5 +15,5 @@ This page was created to facilitate the worldwide proliferation of Salmon Cookie
 
 ### Reflections and Comments
 
-- Loops within loops through me for a loop!
-- Dry programming makes code shorter, and easier to add onto in the future
+- Making CSS look great is hard. I need to improve my organization and make better use of selectors
+- For the JavaScript stretch goals (most of which I ran out of time to complete), getting the interaction you want from multiple objects is difficult. I still need practice with this, but the knowledge is coming togther.
